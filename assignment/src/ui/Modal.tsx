@@ -4,7 +4,6 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { AnimatePresence, motion } from "framer-motion";
 import { ReactNode, useState } from "react";
-import { useTranslation } from "react-i18next";
 
 import styles from "./Modal.module.scss";
 
@@ -66,7 +65,6 @@ export const Modal = ({
   unforceWhite,
 }: ModalProps): React.ReactElement => {
   const [isOpen, setOpen] = useState(false);
-  const { t } = useTranslation(["translation"]);
 
   return (
     <Dialog.Root
