@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'react-big-calendar/lib/css/react-big-calendar.css';
+@import 'react-big-calendar/lib/addons/dragAndDrop/styles';
+@import "react-big-calendar/lib/css/react-big-calendar.css";
+
+
+
+/* Root variables for colors and fonts */
+:root {
+  --background: #f9fafb; /* Light gray background */
+  --foreground: #040404; /* Dark text color */
+  --primary: #0435DD; /* Blue for buttons and highlights */
+  --primary-hover: #0435DD; /* Darker blue for hover states */
+  --border-color: #e5e7eb; /* Light gray for borders */
+  --text-secondary: #6b7280; /* Gray for secondary text */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #f6f9ff; /* Dark background */
+    --foreground: #020508; /* Light text color */
+    --primary: #0600c3; /* Lighter blue for dark mode */
+    --primary-hover: #0435DD;
+    --border-color: #374151; /* Dark gray for borders */
+    --text-secondary: #9ca3af;
+  }
+}
+
+/* Base body styles */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', Arial, Helvetica, sans-serif; /* Use modern sans-serif fonts */
+  line-height: 1.5;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+button {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 0.375rem; /* Rounded corners */
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
